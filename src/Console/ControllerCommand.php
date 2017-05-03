@@ -66,8 +66,8 @@ class ControllerCommand extends GeneratorCommand
     protected function getOptions()
     {
         return [
-            ['repository', 'r', InputOption::VALUE_REQUIRED, 'Generate the repository class for the given model.'],
-            ['model', 'm', InputOption::VALUE_REQUIRED, 'Generate with model binding.'],
+            ['repository', 'r', InputOption::VALUE_REQUIRED, 'Generate the repository implicit binding.example[App\Repositories\FooRepository]'],
+            ['model', 'm', InputOption::VALUE_REQUIRED, 'Generate with model binding. example[foo]'],
         ];
     }
 }

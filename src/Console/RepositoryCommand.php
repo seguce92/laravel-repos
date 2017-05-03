@@ -58,7 +58,7 @@ class RepositoryCommand extends GeneratorCommand
     {
         $stub = str_replace(
             ['DummyNamespace', 'DummyModelLower', 'DummyModel'],
-            [$this->getNamespace($name), strtolower($this->option('model')), $this->option('model')],
+            [$this->getNamespace($name), strtolower($this->option('class')), $this->option('model')],
             $stub
         );
 
@@ -73,7 +73,8 @@ class RepositoryCommand extends GeneratorCommand
     protected function getOptions()
     {
         return [
-            ['model', 'm', InputOption::VALUE_REQUIRED, 'Generate the repository class for the given model.'],
+            ['class', 'c', InputOption::VALUE_REQUIRED, 'Generate the repository class for the given model. example[User]'],
+            ['model', 'm', InputOption::VALUE_REQUIRED, 'Generate the repository model name. example[App\User].'],
             ['hashid', 'i', InputOption::VALUE_NONE, 'Generate a repository using hashid.'],
         ];
     }

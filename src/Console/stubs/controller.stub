@@ -58,7 +58,7 @@ class DummyController extends Controller
      */
     public function store(Request $request)
     {
-        $this->DummyModel->store($request);
+        $this->DummyModels->store($request);
 
         return redirect()->route($this->redirect);
     }

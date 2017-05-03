@@ -34,7 +34,7 @@ class DummyClass
      */
     public function DummyModelLower($id)
     {
-        return $this->DummyModels->find(\KissParadigm\LaravelHashid\Facades\Hashid::decode($id));
+        return $this->DummyModelLowers->find(\KissParadigm\LaravelHashid\Facades\Hashid::decode($id));
     }
 
     /**
@@ -78,7 +78,7 @@ class DummyClass
      */
     public function destroy($id)
     {
-        $this->DummyLower($id)->delete();
+        $this->DummyModelLower($id)->delete();
 
         return true;
     }
