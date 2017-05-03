@@ -1,0 +1,85 @@
+<?php
+
+namespace DummyNamespace;
+
+class DummyClass
+{
+    /**
+     * @type DummyModel
+     */
+    protected $DummyModelLowers;
+
+    /**
+     * @method __construct
+     */
+    public function __construct()
+    {
+        $this->DummyModelLowers = app(\DummyModel::class);
+    }
+
+    /**
+     * return all row DummyModelLower
+     * @method all
+     * @return Illuminate\Database\Eloquent\Collection  [\DummyModel]
+     */
+    public function all()
+    {
+        return $this->DummyModelLowers->all();
+    }
+
+    /**
+     * find to row DummyModelLower
+     * @method DummyModelLower
+     * @param  integer          $id [int]
+     */
+    public function DummyModelLower($id)
+    {
+        return $this->DummyModels->find($id);
+    }
+
+    /**
+     * Stored row DummyModelLower
+     * @method store
+     * @param  Illuminate\Http\Request $request [App\Http\Requests]
+     * @return bool
+     */
+    public function store($request)
+    {
+        $this->DummyModelLowers->create([
+
+        ]);
+
+        return true;
+    }
+
+    /**
+     * Update row DummyModelLower
+     * @method update
+     * @param  Illuminate\Http\Request $request [App\Http\Requests]
+     * @param  integer $id      [int]
+     * @return bool
+     */
+    public function update($request, $id)
+    {
+        $DummyModelLower = $this->DummyModelLower($id);
+
+        $DummyModelLower->update([
+
+        ]);
+
+        return true;
+    }
+
+    /**
+     * Destroy row DummyModelLower
+     * @method destroy
+     * @param  integer  $id [int]
+     * @return bool
+     */
+    public function destroy($id)
+    {
+        $this->DummyLower($id)->delete();
+
+        return true;
+    }
+}

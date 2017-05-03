@@ -1,0 +1,122 @@
+<?php
+
+namespace DummyNamespace;
+
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+
+class DummyController extends Controller
+{
+    /**
+     * @var \$DummyRepository
+     */
+    protected $DummyModels;
+
+    /**
+     * @var string
+     */
+    protected $redirect = 'DummyModel.index';
+
+    /**
+     * [__construct description]
+     * @method __construct
+     */
+    public function __construct()
+    {
+        //$this->middleware('auth');
+        $this->DummyModels = app(\DummyRepository::class);
+    }
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        $data = $this->DummyModels->all();
+
+        return view('app::DummyModel.index', [
+            'DummyModels'   =>  $data
+        ]);
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        return view('app::DummyModel.create');
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        $this->DummyModel->store($request);
+
+        return redirect()->route($this->redirect);
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        $data = $this->DummyModels->DummyModel($id);
+
+        return view('app::DummyModel.show', [
+            'DummyModel'    =>  $data
+        ]);
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        $data = $this->DummyModels->DummyModel($id);
+
+        return view('app::DummyModel.edit', [
+            'DummyModel'    =>  $data
+        ]);
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        $this->DummyModels->update($request, $id);
+
+        return redirect()->route($this->redirect);
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        $this->DummyModels->destroy($id);
+
+        return redirect()->route($this->redirect);
+    }
+}
