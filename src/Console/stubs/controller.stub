@@ -8,7 +8,7 @@ use App\Http\Controllers\Controller;
 class DummyController extends Controller
 {
     /**
-     * @var \$DummyRepository
+     * @var \DummyRepository
      */
     protected $DummyModels;
 

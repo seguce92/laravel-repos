@@ -50,8 +50,8 @@ class ControllerCommand extends GeneratorCommand
     protected function replaceNamespace(&$stub, $name)
     {
         $stub = str_replace(
-            ['DummyNamespace', 'DummyRepository', 'DummyModel'],
-            [$this->getNamespace($name), $this->option('repository'), strtolower($this->option('model'))],
+            ['DummyNamespace', 'DummyRepository', 'DummyModel', 'DummyController'],
+            [$this->getNamespace($name), $this->option('repository'), strtolower($this->option('model')), ucfirst($this->option('model'))],
             $stub
         );
 
