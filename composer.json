@@ -1,6 +1,6 @@
 {
     "name": "seguce92/laravel-repos",
-    "description": "Simple repository package for Laravel 5.",
+    "description": "Simple repository and Controller package for Laravel 5.",
     "keywords": [
         "Laravel5",
         "database",
@@ -15,7 +15,7 @@
     ],
     "require": {
         "php": ">=5.6.0",
-        "laravel/framework": "~5.0",
+        "laravel/framework": "~5.0"
     },
     "autoload": {
         "psr-4": {
