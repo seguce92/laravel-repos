@@ -25,12 +25,15 @@ $ php artisan seguce92:repos "Repositories\FooRepository" --class="Foo" --model=
 ```
 OR
 ```bash
-$ php artisan seguce92:repos "Repositories\FooRepository" --c="Foo" --m="App\Models\Foo"
+$ php artisan seguce92:repos "Repositories\FooRepository" -c "Foo" -m "App\Models\Foo"
 ```
 
 The above command will generate the following repository class in the ```app/Repositories``` directory:
 
 --hashid  This option use if used hashid
+OR
+
+-i
 
 ### Creating a controller class
 Use the ```seguce92:cont``` command to create your repository classes. This command will take as argument the repository class namesapce (from App) and
@@ -41,7 +44,7 @@ $ php artisan seguce92:cont "Http\Controllers\FooController" --repository="App\R
 ```
 OR
 ```bash
-$ php artisan seguce92:cont "Http\Controllers\FooController" --r="App\Repositories\FooRepository" --m="foo"
+$ php artisan seguce92:cont "Http\Controllers\FooController" -r "App\Repositories\FooRepository" -m "foo"
 ```
 
 The above command will generate the following repository class in the ```app/Http/Controllers``` directory:
