@@ -1,16 +1,14 @@
 {
     "name": "seguce92/laravel-repos",
     "description": "Simple repository and Controller package for Laravel 5.",
-    "keywords": [
-        "Laravel5",
-        "database",
-        "repository"
+    "keywords": ["Laravel5", "database", "repository"
     ],
     "license": "MIT",
     "authors": [
         {
             "name": "Sergio G. Cruz Espinoza",
-            "email": "seguce92@gmail.com"
+            "email": "seguce92@gmail.com",
+            "homepage": "https://mascodigo.net/"
         }
     ],
     "require": {
@@ -21,7 +19,5 @@
         "psr-4": {
             "Seguce92\\LaravelRepos\\": "src/"
         }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
