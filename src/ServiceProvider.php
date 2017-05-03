@@ -4,7 +4,7 @@ namespace Seguce92\LaravelRepos;
 
 use Illuminate\Support\ServiceProvider as BaseProvider;
 
-class MangoRepoServiceProvider extends BaseProvider
+class ServiceProvider extends BaseProvider
 {
     /**
      * Bootstrap the application services.
@@ -22,7 +22,7 @@ class MangoRepoServiceProvider extends BaseProvider
             ]);
         }
 
-        $this->bootRepositories();
+        //$this->bootRepositories();
     }
 
     /**
@@ -45,6 +45,11 @@ class MangoRepoServiceProvider extends BaseProvider
         $this->app->resolving(function ($repo) {
             // This is a repo.
             if ($repo instanceof Repository) {
+                // Boot the Repository.
+                $repo->boot();
+            }
+
+            if ($repo instanceof Controller) {
                 // Boot the Repository.
                 $repo->boot();
             }
