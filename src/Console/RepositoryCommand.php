@@ -5,7 +5,7 @@ namespace Seguce92\LaravelRepos\Console;
 use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Input\InputOption;
 
-class MakeCommand extends GeneratorCommand
+class RepositoryCommand extends GeneratorCommand
 {
     /**
      * The console command name.
