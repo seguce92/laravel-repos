@@ -1,20 +1,12 @@
-## Introduction
-Mango Repo is an Eloquent Repository package that aims at bringing an easy to use and fluent API. Getting started with repository pattern can be
-quite overwhelming. This is especially true for newcomers to Eloquent who are getting the grasp of active record. Behind the scenes Mango Repo
-tries to use as much of the Eloquent API as possible and keeping things simple.
-
-## License
-Mango Repo is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
-
 ### Installation
-Install Mango Repo as you would with any other dependency managed by Composer:
+Install LaravelRepos as you would with any other dependency managed by Composer:
 
 ```bash
 $ composer require seguce92/laravel-repos
 ```
 
 ### Configuration
-After installing Mango repo all you need is to register the ```Seguce92\LaravelRepos\ServiceProvider``` in your `config/app.php` configuration file:
+After installing repo all you need is to register the ```Seguce92\LaravelRepos\ServiceProvider``` in your `config/app.php` configuration file:
 
 ```php
 'providers' => [
