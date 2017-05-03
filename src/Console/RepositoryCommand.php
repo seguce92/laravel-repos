@@ -12,7 +12,7 @@ class RepositoryCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $name = 'repos:make';
+    protected $name = 'seguce92:repos';
 
     /**
      * The console command description.
@@ -74,7 +74,7 @@ class RepositoryCommand extends GeneratorCommand
     {
         return [
             ['model', 'm', InputOption::VALUE_REQUIRED, 'Generate the repository class for the given model.'],
-            ['hashid', 'h', InputOption::VALUE_NONE, 'Generate a repository using hashid.'],
+            ['hashid', 'i', InputOption::VALUE_NONE, 'Generate a repository using hashid.'],
         ];
     }
 }

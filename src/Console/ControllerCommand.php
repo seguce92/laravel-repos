@@ -12,7 +12,7 @@ class ControllerCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $name = 'controller:make';
+    protected $name = 'seguce92:cont';
 
     /**
      * The console command description.

@@ -17,21 +17,21 @@ After installing repo all you need is to register the ```Seguce92\LaravelRepos\S
 ```
 
 ### Creating a repository class
-Use the ```repos:make``` command to create your repository classes. This command will take as argument the repository class namesapce (from App) and
+Use the ```seguce92:repos``` command to create your repository classes. This command will take as argument the repository class namesapce (from App) and
 a ```--model``` option which allows you to specify the full namespace of the Eloquent model to which the repository will be tied.
 
 ```bash
-$ php artisan repos:make "Repositories\FooRepository" --model="App\Models\Foo"
+$ php artisan seguce92:repos "Repositories\FooRepository" --model="App\Models\Foo"
 ```
 
 The above command will generate the following repository class in the ```app/Repositories``` directory:
 
 ### Creating a controller class
-Use the ```control:make``` command to create your repository classes. This command will take as argument the repository class namesapce (from App) and
+Use the ```seguce92:cont``` command to create your repository classes. This command will take as argument the repository class namesapce (from App) and
 a ```--model``` option which allows you to specify the full namespace of the Eloquent model to which the repository will be tied.
 
 ```bash
-$ php artisan repos:make "FooController" --repository="App\Repositories\FooRepository" --model="foo"
+$ php artisan seguce92:cont "FooController" --repository="App\Repositories\FooRepository" --model="foo"
 ```
 
 The above command will generate the following repository class in the ```app/Http/Controllers``` directory:
