@@ -31,9 +31,6 @@ $ php artisan seguce92:repos "Repositories\FooRepository" -c "Foo" -m "App\Model
 The above command will generate the following repository class in the ```app/Repositories``` directory:
 
 --hashid  This option use if used hashid
-OR
-
--i
 
 ### Creating a controller class
 Use the ```seguce92:cont``` command to create your repository classes. This command will take as argument the repository class namesapce (from App) and
