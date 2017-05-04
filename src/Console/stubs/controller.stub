@@ -15,7 +15,7 @@ class DummyControllerController extends Controller
     /**
      * @var string
      */
-    protected $redirect = 'DummyModel.index';
+    protected $redirect = 'DummyModels.index';
 
     /**
      * [__construct description]

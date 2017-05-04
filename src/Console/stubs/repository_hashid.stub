@@ -2,6 +2,8 @@
 
 namespace DummyNamespace;
 
+use KissParadigm\LaravelHashid\Facades\Hashid;
+
 class DummyClass
 {
     /**
@@ -34,7 +36,7 @@ class DummyClass
      */
     public function DummyModelLower($id)
     {
-        return $this->DummyModelLowers->find(\KissParadigm\LaravelHashid\Facades\Hashid::decode($id));
+        return $this->DummyModelLowers->find(Hashid::decode($id));
     }
 
     /**
