@@ -2,7 +2,7 @@
 
 namespace DummyNamespace;
 
-use KissParadigm\LaravelHashid\Facades\Hashid;
+use Seguce92\LaravelHashid\Hashid;
 
 class DummyClass
 {
@@ -32,7 +32,7 @@ class DummyClass
     /**
      * find to row DummyModelLower
      * @method DummyModelLower
-     * @param  \KissParadigm\LaravelHashid\Facades\Hashid          $id [Hashid]
+     * @param  \Seguce92\LaravelHashid\Hashid          $id [Hashid]
      */
     public function DummyModelLower($id)
     {
@@ -58,7 +58,7 @@ class DummyClass
      * Update row DummyModelLower
      * @method update
      * @param  Illuminate\Http\Request $request [App\Http\Requests]
-     * @param  \KissParadigm\LaravelHashid\Facades\Hashid $id      [Hashid]
+     * @param  \Seguce92\LaravelHashid\Hashid $id      [Hashid]
      * @return bool
      */
     public function update($request, $id)
@@ -75,7 +75,7 @@ class DummyClass
     /**
      * Destroy row DummyModelLower
      * @method destroy
-     * @param  \KissParadigm\LaravelHashid\Facades\Hashid  $id [Hashid]
+     * @param  \Seguce92\LaravelHashid\Hashid  $id [Hashid]
      * @return bool
      */
     public function destroy($id)
