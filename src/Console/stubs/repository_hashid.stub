@@ -2,7 +2,7 @@
 
 namespace DummyNamespace;
 
-use Seguce92\LaravelHashid\Hashid;
+use Seguce92\LaravelHashid\Facade as Hashid;
 
 class DummyClass
 {
