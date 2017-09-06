@@ -19,5 +19,12 @@
         "psr-4": {
             "Seguce92\\LaravelRepos\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Seguce92\\LaravelRepos\\ServiceProvider"
+            ]
+        }
     }
 }
