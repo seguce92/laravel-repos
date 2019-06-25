@@ -3,12 +3,13 @@
     "description": "Simple repository and Controller package for Laravel 5.",
     "keywords": ["Laravel5", "database", "repository"
     ],
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "Sergio Gualberto Cruz Espinoza",
             "email": "seguce92@gmail.com",
-            "homepage": "https://mascodigo.net/"
+            "homepage": "https://sergiocruzes.com/"
         }
     ],
     "require": {
